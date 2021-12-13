@@ -81,6 +81,7 @@ defmodule Mix.Tasks.Day06 do
            |> Enum.filter(&(&1 != ""))
     grid = Enum.reduce(0..(size-1), {}, fn _, acc1 ->
       Tuple.append(acc1, List.to_tuple(Enum.reduce(0..(size-1), [], fn _, acc2 -> acc2 ++ [:off] end)))
+
     end)
     grid = data
       |> Enum.map(&(String.split(&1, ~r/(\,|\ through\ )/)))

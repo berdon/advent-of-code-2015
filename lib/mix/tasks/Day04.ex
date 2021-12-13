@@ -3,7 +3,7 @@ defmodule Mix.Tasks.Day04 do
   use Mix.Task
 
   def mine(token, length) do
-    mine(token, Enum.reduce(0..(length-1), "", fn _, acc -> "0" <> acc end), length)
+    mine(token, Enum.reduce(0..(length - 1), "", fn _, acc -> "0" <> acc end), length)
   end
 
   def mine(token, prefix, index) do
